@@ -2,6 +2,8 @@
 table = []
 limit = 100
 
+abs = Math.abs
+
 for x in [0...limit]
   piece = []
   for y in [0...x]
@@ -14,6 +16,26 @@ for x in [2...limit]
       a = x
       b = y
       loop
+        e = a
+        f = b
+        loop
+          e -= y
+          f += x
+          e_ = abs e
+          f_ = abs f
+          if f_ > e_ then [e_, f_] = [f_, e_]
+          break if e_ >= limit
+          table[e_][f_] = no
+        e = a
+        f = b
+        loop
+          e += y
+          f -= x
+          e_ = abs e
+          f_ = abs f
+          if f_ > e_ then [e_, f_] = [f_, e_]
+          break if e_ >= limit
+          table[e_][f_] = no
         a += x
         b += y
         break if a >= limit
