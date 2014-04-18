@@ -1,0 +1,20 @@
+{
+  "name": "dual-balanced-ternary-table",
+  "version": "0.0.1",
+  "description": "table of dual balanced ternary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ternary"
+  ],
+  "author": "jiyinyiyong",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^3.43.0",
+    "cirru-html": "^0.1.7",
+    "devtools-reloader-station": "0.0.4",
+    "shelljs": "^0.2.6"
+  }
+}
